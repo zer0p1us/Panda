@@ -3,6 +3,8 @@
 namespace Panda {
     class Program {
 
+        public static bool debugLog = false;
+
         static void Main(string[] args) {
             //getting panda source filename
             string source_filename;
