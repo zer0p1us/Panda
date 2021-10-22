@@ -66,5 +66,12 @@ namespace Panda {
             return float.Parse((string)row["expression"]);
         }
 
+
+        public static void debugLog(string message,string type, bool log=false){
+            if (log) {
+                Console.WriteLine(message);
+            }
+        }
+
     }
 }
