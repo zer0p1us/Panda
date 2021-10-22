@@ -34,9 +34,9 @@ namespace Panda{
             // }
             var_Register.setVariable(temp_line_array[1], temp_line_array[3]);
             if (temp_line_array[0] == "var"){
-                Console.WriteLine("[info]: variable " + temp_line_array[1] + " stores " + var_Register.getVariable(temp_line_array[1]));
+                Utils.debugLog("[info]: variable " + temp_line_array[1] + " stores " + var_Register.getVariable(temp_line_array[1]), Program.debugLog);
             }else{
-                Console.WriteLine("[info]: variable " + temp_line_array[0] + " stores " + var_Register.getVariable(temp_line_array[0]));
+                Utils.debugLog("[info]: variable " + temp_line_array[0] + " stores " + var_Register.getVariable(temp_line_array[0]), Program.debugLog);
             }
         }
 

@@ -29,11 +29,11 @@ namespace Panda {
         /// <param name="var_Register"> main varible register </param>
         public void run(string[] panda_source) {
             this.panda_source = panda_source;
-            Console.WriteLine("[info]: initialising panda code");
+            Utils.debugLog("[info]: initialising panda code", Program.debugLog);
 
             //looping through each line in the file
             for (program_counter = 0; program_counter < panda_source.Length; program_counter++) {
-                Console.WriteLine("[info]: processing line " + (program_counter + 1));
+                Utils.debugLog("[info]: processing line " + (program_counter + 1), Program.debugLog);
 
                 //process current token
                 switch (token.match_kw(new string(panda_source[program_counter]).Split(' ')[0], lang_kw)) {

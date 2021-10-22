@@ -23,7 +23,7 @@ namespace Panda {
                         code_line_list.Add(line);
                     }
                 }
-                Console.WriteLine("[info]: " + file_name + " has been loaded in memory");
+                Utils.debugLog("[info]: " + file_name + " has been loaded in memory", Program.debugLog);
                 return code_line_list.ToArray();
             } catch(FileNotFoundException){
                 // if error accours while opening file
@@ -67,7 +67,7 @@ namespace Panda {
         }
 
 
-        public static void debugLog(string message,string type, bool log=false){
+        public static void debugLog(string message, bool log=false){
             if (log) {
                 Console.WriteLine(message);
             }

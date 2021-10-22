@@ -15,9 +15,9 @@ namespace Panda {
                 Panda.lexer.int_Register.setVariable(temp_line_array[1], math.evaluate(temp_line_array[temp_line_array.Length - 1]));
             }
             if (temp_line_array[0] == "int"){
-                Console.WriteLine("[info]: integer variable " + temp_line_array[1] + " stores " + Panda.lexer.int_Register.getVariable(temp_line_array[1]));
+                Utils.debugLog("[info]: integer variable " + temp_line_array[1] + " stores " + Panda.lexer.int_Register.getVariable(temp_line_array[1]), Program.debugLog);
             }else {
-                Console.WriteLine("[info]: integer variable " + temp_line_array[0] + " stores " + Panda.lexer.int_Register.getVariable(temp_line_array[1]));
+                Utils.debugLog("[info]: integer variable " + temp_line_array[0] + " stores " + Panda.lexer.int_Register.getVariable(temp_line_array[1]), Program.debugLog);
             }
         }
 

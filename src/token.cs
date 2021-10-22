@@ -79,7 +79,7 @@ namespace Panda {
                     OUTPUT = "print";
 
 
-                    Console.WriteLine("[Warning]: in-build english language keys have been loaded");
+                    Utils.debugLog("[Warning]: in-build english language keys have been loaded", Program.debugLog);
                 }
 
             }
