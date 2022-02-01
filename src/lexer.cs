@@ -48,7 +48,7 @@ namespace Panda {
                         }
                         break;
                     case token.kw_index.OUTPUT:
-                        Panda.execution.ouput._output(new string(panda_source[program_counter]));
+                        Panda.execution.output._output(new string(panda_source[program_counter]));
                         break;
                     case token.kw_index.COMMENT:
                         break;

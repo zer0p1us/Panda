@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Panda.execution {
-    class ouput {
-        
+    class output {
+
         public static void _output(string rawOutputData) {
             string processed = integer.repaceIntReference(extractBracketContent(rawOutputData));
             processed.Replace("(", "");
